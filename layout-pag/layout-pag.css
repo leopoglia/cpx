@@ -177,7 +177,13 @@ main{
 .descricao-jogo{
   margin-right: 10px;
   color: #e7e7e7;
-  width: 60%;
+  width: 50%;
+}
+
+#desc{
+  height: 40%;
+  box-sizing: border-box;
+
 }
 
 .importante-jogo{
@@ -190,14 +196,13 @@ main{
   align-items: center;
   justify-content: center;
   padding: 2px;
+  font-size: 14px;
 }
 
 #lancamento{
   color: #e7e7e7;
-  font-weight: bold;
   width: 30%;
   height: 100%;
-  font-size: 15px;
   position: relative;
   box-shadow: -4px 0px 0px #131313 inset;
   display: flex;
@@ -207,10 +212,8 @@ main{
 
 #dificuldade{
   color: #e7e7e7;
-  font-weight: bold;
   width: 30%;
   height: 100%;
-  font-size: 15px;
   position: relative;
   box-shadow: -4px 0px 0px #131313 inset;
   display: flex;
@@ -220,10 +223,8 @@ main{
 
 #tamanho{
   color: #e7e7e7;
-  font-weight: bold;
   width: 30%;
   height: 100%;
-  font-size: 15px;
   position: relative;
   display: flex;
   align-items: center;
@@ -231,7 +232,10 @@ main{
 }
 
 @media (max-width: 999px) {
-
+  #desc{
+    height: 70%;
+  }
+  
   body {
     overflow-x: hidden;
   }
@@ -266,4 +270,20 @@ main{
     box-sizing: border-box;
   }
 
+}
+
+@media (max-width: 600px) {
+  .importante-jogo{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 10px;
+  }
+  
 }
