@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #131313;
+}
+
+a {
+  color: #e7e7e7;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.logo:hover{
+  color: #154bbb;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #2a2a2a;
+  height: 55px;
+}
+
+
+.nav-list {
+  margin-left: 40%;
+  height: 53px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nav-list li {
+  height: 100%;
+  letter-spacing: 3px;
+  display: flex;
+  padding: 0 20px 0 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li:hover{
+  box-shadow: 0px -4px 0px #154bbb inset;
+  transition: 0.3s;
+}
+
+#login{
+  color: #e7e7e7;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #2a2a2a;
+  width: 70vw;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.menu-container{
+  width: 100%;
+  height: 70px;
+  background-color: #1a1a1a;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.div-jogos{
+  height: 50%;
+  width: 50%;
+}
+
+#titulo-pagina{
+  width: 15%;
+  margin-right: 45%;
+  margin-left: 5%;
+  color: #e7e7e7;
+  text-decoration: none;
+}
+
+.pagina-jogos{
+
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.jogos{
+  width: 95%;
+  height: 100%;
+  padding: 10px;
+  background-color: #131313;
+  border-radius: 10px;
+}
+
+.jogos:hover{
+  background-color: #154bbb;
+  transition: 0.5s;
+}
+
+.imagem{
+  border-radius: 5px;
+  height: 300px;
+  width: 100%;
+  min-width: 150px;
+}
+
+.descricao-jogo{
+  margin-right: 10px;
+  color: #e7e7e7;
+  width: 60%;
+}
+
+.importante-jogo{
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+#lancamento{
+  color: #e7e7e7;
+  font-weight: bold;
+  width: 30%;
+  height: 100%;
+  font-size: 15px;
+  position: relative;
+  box-shadow: -4px 0px 0px #131313 inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dificuldade{
+  color: #e7e7e7;
+  font-weight: bold;
+  width: 30%;
+  height: 100%;
+  font-size: 15px;
+  position: relative;
+  box-shadow: -4px 0px 0px #131313 inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tamanho{
+  color: #e7e7e7;
+  font-weight: bold;
+  width: 30%;
+  height: 100%;
+  font-size: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 999px) {
+
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #131313;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+  .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #2a2a2a;
+    width: 95vw;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+}
