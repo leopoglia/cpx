@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "custom-font";
+  src: url("KFOmCnqEu92Fr1Mu4mxK.woff2") format("woff2"),
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-family: "custom-font",sans-serif;
 }
+
 
 body{
   width: 100%;
@@ -17,13 +23,24 @@ a {
 }
 
 .logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
 }
-
 .logo:hover{
   color: #154bbb;
+}
+
+.version{
+  margin-left: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #e7e7e7;
+  background-color: #154bbb;
+  border-radius: 4px;
+  padding: 1px 5px;
+  position: relative;
 }
 
 
@@ -50,11 +67,12 @@ nav {
 
 .nav-list li {
   height: 100%;
-  letter-spacing: 3px;
   display: flex;
   padding: 0 20px 0 20px;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .nav-list li:hover{
