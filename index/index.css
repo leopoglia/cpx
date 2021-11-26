@@ -47,7 +47,7 @@ nav {
   
 }
 
-.version{
+#version{
   margin-left: 5px;
   font-size: 10px;
   font-weight: 600;
@@ -77,6 +77,15 @@ nav {
   color: #e7e7e7;
   margin-left: 30px;
   margin-right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#mode{
+  margin-left: 30px;
+  color: #e7e7e7;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .mobile-menu {
@@ -125,7 +134,7 @@ main{
   align-items: center;
 }
 
-.container{
+#container{
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 10px 10px 10px 10px;
@@ -135,7 +144,7 @@ main{
   height: 100vh;
   box-sizing: border-box;
 }
-.menu-container{
+#menu-container{
   width: 100%;
   height: 70px;
   background-color: #1a1a1a;
