@@ -201,7 +201,7 @@ main{
 }
 
 @media (max-width: 999px) {
-  .container{
+  #container{
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 10px 10px 10px 10px;
