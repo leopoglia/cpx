@@ -280,24 +280,35 @@ main{
     overflow-x: hidden;
   }
   .nav-list {
+    z-index: 1;
     position: absolute;
-    top: 60px;
+    top: 55px;
     right: 0;
-    width: 50vw;
-    height: 92vh;
+    width: 100vw;
+    height: 150vh;
     background: #131313;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: grid;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+  }
+
+  #mode{
+    color:transparent
   }
   .nav-list li {
     margin-left: 0;
     opacity: 0;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .mobile-menu {
     display: block;
+  }
+  .nav-list li:hover{
+    box-shadow: 0px 0px 0px transparent inset;
   }
 }
 
