@@ -213,6 +213,8 @@ main{
 
   body {
     overflow-x: hidden;
+    width: 100vh;
+    height: 100vh;
   }
   .nav-list {
     z-index: 1;
@@ -232,6 +234,7 @@ main{
   #mode{
     color:transparent
   }
+
   .nav-list li {
     margin-left: 0;
     opacity: 0;
