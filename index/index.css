@@ -216,6 +216,8 @@ main{
     width: 100vh;
     height: 100vh;
   }
+
+  
   .nav-list {
     z-index: 1;
     position: absolute;
@@ -232,7 +234,11 @@ main{
   }
 
   #mode{
-    color:transparent
+    color:transparent;
+  }
+
+  #login{
+    color:transparent;
   }
 
   .nav-list li {
