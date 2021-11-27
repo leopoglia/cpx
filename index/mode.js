@@ -13,4 +13,5 @@ function pedro(){
     document.getElementById("mode").style = "color: #154bbb;";
     document.getElementById("login").style = "color: #154bbb;";
     document.getElementById("version").style = "background-color: #e7e7e7; color: #154bbb;";
+    document.getElementsByClassName("jogos").style = "background-color: white";
 }
