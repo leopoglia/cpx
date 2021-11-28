@@ -53,7 +53,7 @@ nav {
 
 .nav-list {
   margin-left: 40%;
-  height: 53px;
+  height: 54px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -181,25 +181,29 @@ main{
 }
 
 .div-jogos{
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  margin: 3.5%
 }
 
 .jogos {
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
+  margin: 1%;
   background-color: #131313;
   box-shadow: 0px 0px 30px black;
   border-radius: 10px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
 }
 
 .jogos:hover{
   background-color: #154bbb;
   box-shadow: 0px 0px 50px #154bbb;
-  transition: 0.3s;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .imagem{
@@ -209,20 +213,6 @@ main{
   height: 90%;
 }
 
-.jogo1{
-  width: 100%;
-  height: 85%;
-  background-color: #1a1a1a;
-  color: #e7e7e7;
-}
-
-.titulo-jogo1{
-  width: 100%;
-  padding-left: 5px;
-  padding-top: 5px;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
 
 #titulo-pagina{
   display: flex;
@@ -250,6 +240,29 @@ main{
   margin-right: 30px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.titulojogo{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #e7e7e7;
+  font-weight: bold;
+  background-color: #131313;
+  margin-top: 130px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.jogos:hover .titulojogo{
+  background-color: #154bbb;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 @media (max-width: 999px) {
@@ -281,6 +294,11 @@ main{
     transition: transform 0.3s ease-in;
   }
 
+  .jogos{
+    width: 100px;
+    height: 100px;
+  }
+
   #mode{
     color:transparent
   }
@@ -296,6 +314,12 @@ main{
   }
   .nav-list li:hover{
     box-shadow: 0px 0px 0px transparent inset;
+  }
+
+  .titulojogo{
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
   }
 }
 

@@ -13,5 +13,9 @@ function pedro(){
     document.getElementById("mode").style = "color: #154bbb;";
     document.getElementById("login").style = "color: #154bbb;";
     document.getElementById("version").style = "background-color: #e7e7e7; color: #154bbb;";
-    document.getElementsByClassName("jogos").style = "background-color: white";
+
+    var active = document.querySelectorAll('.jogos');
+    for(var i = 0; i < active.length; i++) {
+        active[i].style = "background-color: #154bbb; box-shadow: 0px 0px 0px transparent;";
+    }
 }

@@ -36,10 +36,6 @@ class MobileNavbar {
   }
 }
 
-function roberto(){
-  window.location.href = '../layout-pag/layout-pag.html';
-}
-
 const mobileNavbar = new MobileNavbar(
   ".mobile-menu",
   ".nav-list",
