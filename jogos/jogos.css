@@ -251,7 +251,7 @@ main{
   color: #e7e7e7;
   font-weight: bold;
   background-color: #131313;
-  margin-top: 130px;
+  margin-top: 150px;
   width: 200px;
   height: 50px;
   border-radius: 5px;
@@ -265,8 +265,16 @@ main{
   z-index: 1;
 }
 
+.nav-list.active {
+  transform: translateX(0);
+}
+
 @media (max-width: 999px) {
-  .container{
+
+  #titulo-pagina{
+    margin-right: 40%;
+  }
+  #container{
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 10px 10px 10px 10px;
@@ -295,8 +303,8 @@ main{
   }
 
   .jogos{
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
   }
 
   #mode{
@@ -317,12 +325,8 @@ main{
   }
 
   .titulojogo{
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     margin-top: 0;
   }
-}
-
-.nav-list.active {
-  transform: translateX(0);
 }
