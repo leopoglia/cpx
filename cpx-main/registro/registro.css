@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "custom-font";
+  src: url("KFOmCnqEu92Fr1Mu4mxK.woff2") format("woff2"),
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "custom-font",sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container{
+  background-color: #2a2a2a;
+  width: 40%;
+  min-width: 400px;
+  min-height: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px black;
+  display: grid;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-radius: 10px 10px 0 0;
+  height: 100px;
+  box-shadow: 0px 4px 0px #154bbb ;
+}
+
+#voltar{
+  position: fixed;
+  color: rgb(82, 82, 82);
+  width: 40px;
+  height: 40px;
+  margin-left: -10%;
+  margin-top: -15px;
+}
+
+
+#tituloregistrar{
+  letter-spacing: 2px;
+  color: rgb(82, 82, 82);
+}
+
+#titulo{
+  color: rgb(82, 82, 82);
+}
+
+
+.div-input{
+  background-color: #131313;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.div-input:hover{
+  box-shadow: 0px 0px 20px #1a1a1a;
+}
+
+
+#email, #login, #senha{
+  margin-left: 5%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 95%;
+  height: 100%;
+  color: #131313;
+  color: white;
+}
+
+#subimit{
+  background-color: #131313;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 60px;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  outline: none;
+  box-shadow: 0px 0px 10px black;
+  transition: 0.5s;
+}
+
+#subimit:hover{
+  border: 4px solid #154bbb;
+  box-shadow: 0px 0px 30px #154bbb;
+  background-color: #154bbb;
+  color: #131313;
+}
+
+
+#subimit:hover #titulo{
+  color: #2a2a2a;
+}
+
+.div-subimit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#conta{
+  width: 70%;
+  text-decoration: none;
+}
+
+#conta #titulo:hover{
+  color:#154bbb;
+  transition: 0.5s;
+}
