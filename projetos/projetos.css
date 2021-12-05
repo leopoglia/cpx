@@ -7,19 +7,13 @@
   margin: 0;
   padding: 0;
   font-family: "custom-font",sans-serif;
-  box-sizing: border-box;
   user-select: none;
 }
-
 
 a {
   color: #e7e7e7;
   text-decoration: none;
   transition: 0.3s;
-}
-
-#jogos{
-  box-shadow: 0px -3px 0px #154bbb inset;
 }
 
 .logo {
@@ -33,26 +27,14 @@ a {
   color: #154bbb;
 }
 
-#version{
-  margin-left: 5px;
-  font-size: 10px;
-  font-weight: 600;
-  color: #e7e7e7;
-  background-color: #154bbb;
-  border-radius: 4px;
-  padding: 1px 5px;
-  position: relative;
-}
-
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #2a2a2a;
-  height: 55px;
   box-shadow: -4px 0 30px black;
+  height: 55px;
 }
 
 
@@ -64,6 +46,17 @@ nav {
   justify-content: center;
   align-items: center;
   
+}
+
+#version{
+  margin-left: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #e7e7e7;
+  background-color: #154bbb;
+  border-radius: 4px;
+  padding: 1px 5px;
+  position: relative;
 }
 
 .nav-list li {
@@ -79,6 +72,22 @@ nav {
 .nav-list li:hover{
   box-shadow: 0px -3px 0px rgba(16,16,16, 0.5) inset;
   transition: 0.3s;
+}
+
+#projetos{
+  box-shadow: 0px -3px 0px #154bbb inset;
+}
+
+#login{
+  color: #e7e7e7;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#mode{
+  color: #e7e7e7;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .mobile-menu {
@@ -133,7 +142,8 @@ main{
   background-color: #2a2a2a;
   box-shadow: 0px 0px 30px black;
   width: 90vw;
-  height: 100%;
+  height: 75vh;
+  box-sizing: border-box;
 }
 #menu-container{
   width: 100%;
@@ -153,6 +163,7 @@ main{
   display: flex;
   align-items: center;
 }
+
 
 #input-menu:hover{
   box-shadow: 0px -5px 0px rgba(16,16,16, 0.9) inset;
@@ -174,39 +185,6 @@ main{
   font-size: 18px;
 }
 
-.div-jogos{
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-.jogos {
-  height: 200px;
-  width: 200px;
-  margin: 1%;
-  background-color: #131313;
-  box-shadow: 0px 0px 30px black;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-  text-align: center;
-}
-
-.jogos:hover{
-  background: linear-gradient(100deg, rgba(0,58,183,1) 0%, rgba(0,102,193,1) 100%);
-  box-shadow: 0px 0px 50px #154bbb;
-  transition: 0.2s;
-  z-index: 1;
-}
-
-.imagem{
-  position: relative;
-  width: 90%;
-  height: 90%;
-}
-
-
 #titulo-pagina{
   display: flex;
   align-items: center;
@@ -215,63 +193,30 @@ main{
   text-decoration: none;
   font-size: 20px;
 }
-#game{
+
+#casa{
   margin-right: 5px;
   margin-top: -3px;
 }
 
-#login{
-  color: #e7e7e7;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-#mode{
-  color: #e7e7e7;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-
-.titulojogo{
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  color: #e7e7e7;
-  font-weight: bold;
-  background-color: #131313;
-  margin-top: 150px;
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  z-index: -1;
-}
-
-.jogos:hover .titulojogo{
-  background: linear-gradient(100deg, rgba(0,58,183,1) 0%, rgba(0,102,193,1) 100%);
-  z-index: 1;
-}
 
 .nav-list.active {
   transform: translateX(0);
 }
 
+
 @media (max-width: 1100px) {
   body{
-    overflow-x: hidden;
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: fixed;
   }
 
   #titulo-pagina{
     margin-right: 40%;
   }
 
-  nav{
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-  }
 
   .nav-list {
     z-index: 1;
@@ -287,27 +232,12 @@ main{
     transform: translateX(100%);
   }
 
-  #container{
-    margin-top: 75px;
-  }
-
-  .fundo-mode{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
   #mode{
     font-size: 30px;
   }
 
   #login{
     font-size: 30px;
-  }
-
-  .jogos{
-    width: 140px;
-    height: 140px;
   }
 
   .nav-list li {
@@ -325,13 +255,9 @@ main{
     box-shadow: 0px 0px 0px transparent inset;
   }
 
-  .titulojogo{
-    width: 140px;
-    height: 140px;
-    margin-top: 0;
-  }
+  
+#projetos{
+  box-shadow: 0px -3px 0px #154cbb00 inset;
+}
 
-  #jogos{
-    box-shadow: 0px -3px 0px #154cbb00 inset;
-  }
 }

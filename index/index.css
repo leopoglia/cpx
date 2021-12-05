@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   font-family: "custom-font",sans-serif;
+  user-select: none;
 }
 
 a {
@@ -69,8 +70,12 @@ nav {
 }
 
 .nav-list li:hover{
-  box-shadow: 0px -4px 0px #154bbb inset;
+  box-shadow: 0px -3px 0px rgba(16,16,16, 0.5) inset;
   transition: 0.3s;
+}
+
+#inicio{
+  box-shadow: 0px -3px 0px #154bbb inset;
 }
 
 #login{
@@ -154,13 +159,14 @@ main{
   width: 40%;
   height: 40px;
   background-color: #2a2a2a;
-  box-shadow: 0px -4px 0px #131313 inset;
+  box-shadow: 0px -3px 0px #131313 inset;
   display: flex;
   align-items: center;
 }
 
+
 #input-menu:hover{
-  box-shadow: 0px -4px 0px #154bbb inset;
+  box-shadow: 0px -5px 0px rgba(16,16,16, 0.9) inset;
   transition: 0.2s;
 }
 
@@ -207,6 +213,10 @@ main{
     position: fixed;
   }
 
+  #titulo-pagina{
+    margin-right: 40%;
+  }
+
 
   .nav-list {
     z-index: 1;
@@ -231,7 +241,7 @@ main{
   }
 
   .nav-list li {
-    margin-top: 65px;
+    margin-top: 70px;
     margin-bottom: 50px;
     margin-left: 0;
     opacity: 0;
@@ -244,5 +254,10 @@ main{
   .nav-list li:hover{
     box-shadow: 0px 0px 0px transparent inset;
   }
+
+  
+#inicio{
+  box-shadow: 0px -3px 0px #154cbb00 inset;
+}
 
 }
