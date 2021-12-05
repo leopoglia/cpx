@@ -131,18 +131,15 @@ main{
 #container{
   margin-top: 50px;
   margin-bottom: 50px;
-  border-radius: 10px 10px 10px 10px;
   background-color: #2a2a2a;
   box-shadow: 0px 0px 30px black;
-  width: 70vw;
+  width: 90vw;
   height: 100%;
-  box-sizing: border-box;
 }
 #menu-container{
   width: 100%;
   height: 70px;
   background-color: #1a1a1a;
-  border-radius: 10px 10px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +150,6 @@ main{
   width: 40%;
   height: 40px;
   background-color: #2a2a2a;
-  border-radius: 5px 5px 0 0;
   box-shadow: 0px -4px 0px #131313 inset;
   display: flex;
   align-items: center;
@@ -162,7 +158,6 @@ main{
 #input-menu:hover{
   box-shadow: 0px -4px 0px #154bbb inset;
   transition: 0.2s;
-  border-radius: 5px 5px 0 0;
 }
 
 #lupa{
@@ -192,7 +187,6 @@ main{
   margin: 1%;
   background-color: #131313;
   box-shadow: 0px 0px 30px black;
-  border-radius: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -209,7 +203,6 @@ main{
 
 .imagem{
   position: relative;
-  border-radius: 5px;
   width: 90%;
   height: 90%;
 }
@@ -270,19 +263,10 @@ main{
   transform: translateX(0);
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1100px) {
 
   #titulo-pagina{
     margin-right: 40%;
-  }
-  #container{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #2a2a2a;
-    width: 95vw;
-    height: 100%;
-    box-sizing: border-box;
   }
 
   body {
@@ -294,13 +278,32 @@ main{
     top: 55px;
     right: 0;
     width: 100vw;
-    height: 150vh;
+    height: 120vh;
     background: #131313;
-    flex-direction: column;
+    display: grid;
     align-items: center;
-    justify-content: grid;
+    justify-content: center;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+  }
+
+  .fundo-mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  #fundo-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
   }
 
   .jogos{
@@ -308,9 +311,6 @@ main{
     height: 140px;
   }
 
-  #mode{
-    color:transparent
-  }
   .nav-list li {
     margin-left: 0;
     opacity: 0;
