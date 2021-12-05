@@ -201,8 +201,10 @@ main{
 
 @media (max-width: 1100px) {
   body {
+    width: 100%;
     overflow-x: hidden;
     position: fixed;
+    overflow-y: scroll !important;
   }
 
   
