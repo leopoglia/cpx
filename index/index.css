@@ -200,54 +200,43 @@ main{
 
 
 @media (max-width: 1100px) {
-  body {
+  body{
+    height: 100%;
+    overflow: hidden !important;
     width: 100%;
-    overflow-x: hidden;
     position: fixed;
-    overflow-y: scroll !important;
   }
 
-  
+
   .nav-list {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     top: 55px;
     right: 0;
     width: 100vw;
-    height: 120vh;
+    height: 100%;
     background: #131313;
-    display: grid;
+    display: block;
     align-items: center;
     justify-content: center;
     transform: translateX(100%);
   }
 
-  .fundo-mode{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   #mode{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
+    font-size: 30px;
   }
 
-  #fundo-login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
+  #login{
+    font-size: 30px;
   }
 
   .nav-list li {
+    margin-top: 65px;
+    margin-bottom: 50px;
     margin-left: 0;
     opacity: 0;
     height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    font-size: 25px;
   }
   .mobile-menu {
     display: block;
