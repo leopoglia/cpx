@@ -200,8 +200,9 @@ main{
 
 
 @media (max-width: 1100px) {
-  #pedrinho {
+  body {
     overflow-x: hidden;
+    position: fixed;
   }
 
   
