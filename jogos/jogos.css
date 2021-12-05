@@ -255,8 +255,9 @@ main{
 
 @media (max-width: 1100px) {
   body {
-    position:relative;
+    width: 100%;
     overflow-x: hidden;
+    position: fixed;
     overflow-y: scroll !important;
   }
 
