@@ -52,7 +52,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #2a2a2a;
   height: 55px;
-  box-shadow: -4px 0 30px black;
+  box-shadow: -4px 0 10px black;
 }
 
 
@@ -131,7 +131,7 @@ main{
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: #2a2a2a;
-  box-shadow: 0px 0px 30px black;
+  box-shadow: 0px 0px 10px black;
   width: 90vw;
   height: 100%;
 }
@@ -144,9 +144,10 @@ main{
   justify-content: center;
 }
 
+
 #input-menu{
   margin-right: 20px;
-  width: 40%;
+  width: 80%;
   height: 40px;
   background-color: #2a2a2a;
   box-shadow: 0px -3px 0px #131313 inset;
@@ -210,14 +211,15 @@ main{
 #titulo-pagina{
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-right: 50%;
   color: #e7e7e7;
   text-decoration: none;
   font-size: 20px;
-}
-#game{
-  margin-right: 5px;
-  margin-top: -3px;
+  width: 105px;
+  height: 50px;
+  background-color: rgb(46, 46, 46);
+  box-shadow: 0px 3px 0px #154bbb;
 }
 
 #login{
@@ -264,7 +266,7 @@ main{
   }
 
   #titulo-pagina{
-    margin-right: 40%;
+    margin-right: 10%;
   }
 
   nav{
@@ -288,7 +290,7 @@ main{
   }
 
   #container{
-    margin-top: 75px;
+    margin-top: 105px;
   }
 
   .fundo-mode{
