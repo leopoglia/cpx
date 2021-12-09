@@ -21,7 +21,7 @@ a {
     transition: 0.3s;
 }
 
-.logo {
+#logo {
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -29,7 +29,7 @@ a {
     pointer-events: none;
 }
 
-.logo:hover {
+#logo:hover {
     color: #154bbb;
 }
 
@@ -77,6 +77,11 @@ nav {
     transition: 0.3s;
 }
 
+.dark-mode {
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 31, 31);
+}
+
 #inicio {
     box-shadow: 0px -3px 0px #154bbb inset;
 }
@@ -88,6 +93,12 @@ nav {
 }
 
 #mode {
+    color: #e7e7e7;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#mode_active {
     color: #e7e7e7;
     font-size: 20px;
     cursor: pointer;
