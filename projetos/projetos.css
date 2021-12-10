@@ -154,6 +154,9 @@ body{
   box-shadow: 0px -4px 0px rgba(16, 16, 16, 30%) inset !important;
 }
 
+iframe{
+  border: none;
+}
 
 main{
   display: flex;
@@ -167,7 +170,7 @@ main{
   background-color: #2a2a2a;
   box-shadow: 0px 0px 10px black;
   width: 90vw;
-  height: 75vh;
+  height: 100%;
   box-sizing: border-box;
 }
 #menu-container{
