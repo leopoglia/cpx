@@ -18,17 +18,16 @@
 a {
   color: #e7e7e7;
   text-decoration: none;
-  transition: 0.3s;
 }
 
-.logo {
+#logo {
   display: flex;
   align-items: center;
   font-size: 20px;
   font-weight: 600;
 }
 
-.logo:hover{
+#logo:hover{
   color: #154bbb;
 }
 
@@ -134,6 +133,27 @@ nav {
 body{
   background-color: #131313;
 }
+
+.dark-mode {
+  background-color: rgb(255, 255, 255) !important;
+  color: #154bbb !important;
+}
+
+.dark-mode2{
+  background-color: #154bbb !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.dark-mode3 {
+  background-color: rgb(255, 255, 255) !important;
+  color: #154bbb !important;
+  box-shadow: 0px -3px 0px rgba(16, 16, 16, 30%) inset !important;
+}
+
+.dark-mode3:hover {
+  box-shadow: 0px -4px 0px rgba(16, 16, 16, 30%) inset !important;
+}
+
 
 main{
   display: flex;
