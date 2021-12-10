@@ -170,10 +170,6 @@ iframe{
     border: none;
 }
 
-#modal{
-    position: absolute;
-}
-
 #container {
     margin-top: 50px;
     margin-bottom: 50px;
