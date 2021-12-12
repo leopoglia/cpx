@@ -330,10 +330,6 @@ main{
     position: fixed;
   }
 
-  .container-anuncio{
-    height: 370px;
-  }
-  
   .imagem-anuncio{
     width: 0;
     height: 0;
@@ -388,14 +384,14 @@ main{
   }
 }
 
-@media(max-width: 500px){
-  *{
-    font-size: 11px;
+@media(max-width: 600px){
+  ul{
+    font-size: 13px;
   }
 }
 
 @media(max-width: 400px){
-  *{
+  ul{
     font-size: 10px;
   }
 }
