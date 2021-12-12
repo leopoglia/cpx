@@ -1,39 +1,32 @@
-@font-face {
-    font-family: "custom-font";
-    src: url("KFOmCnqEu92Fr1Mu4mxK.woff2") format("woff2"),
-}
-
 * {
     margin: 0;
     padding: 0;
-    font-family: "custom-font", sans-serif;
-    box-sizing: border-box;
     user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";;
 }
 
 a {
-    color: #e7e7e7;
+    color: #ccc;
     text-decoration: none;
 }
-
 #jogos {
-    box-shadow: 0px -3px 0px #154bbb inset;
+    border-bottom: 2px solid #238636;
+}
+
+#b{
+    color: #fff!important;
 }
 
 #logo {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
+    transition: 0s;
 }
 
 #logo:hover {
-    color: #154bbb;
+    color: #238636;
 }
 
 #version {
@@ -41,7 +34,7 @@ a {
     font-size: 10px;
     font-weight: 600;
     color: #e7e7e7;
-    background-color: #154bbb;
+    background-color: #238636;
     border-radius: 4px;
     padding: 1px 5px;
     position: relative;
@@ -51,12 +44,10 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #2a2a2a;
     height: 55px;
-    box-shadow: -4px 0 10px black;
+    border-bottom: 1px solid #353535;
 }
-
 .nav-list {
     margin-left: 40%;
     height: 54px;
@@ -74,11 +65,13 @@ nav {
     align-items: center;
     font-size: 15px;
     font-weight: 600;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-list li:hover {
-    box-shadow: 0px -3px 0px rgba(16, 16, 16, 0.5) inset;
-    transition: 0.3s;
+    border-bottom: 2px solid #238636;
+    transition: 0.6s;
+    background-color: #353535;
 }
 
 .mobile-menu {
@@ -151,10 +144,11 @@ main {
 #container {
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #2a2a2a;
-    box-shadow: 0px 0px 10px black;
     width: 90vw;
     height: 100%;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    border-radius: 10px 10px 8px 8px;
 }
 
 #menu-container {
@@ -164,67 +158,69 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px 8px 0 0;
 }
 
 #input-menu {
     margin-right: 20px;
     width: 80%;
     height: 40px;
-    background-color: #2a2a2a;
-    box-shadow: 0px -3px 0px #131313 inset;
+    background-color: #131313;
     display: flex;
     align-items: center;
-}
-
-#input-menu:hover {
-    box-shadow: 0px -5px 0px rgba(16, 16, 16, 0.9) inset;
-    transition: 0.2s;
+    border-radius: 6px 6px 6px 6px;
+    border: solid 1px #353535;
 }
 
 #lupa {
     margin-left: 5px;
 }
 
+
+#lupa {
+    margin-left: 5px; 
+}
+
 #search {
-    margin-bottom: 4px;
+    margin-left: 5px;
     width: 90%;
     height: 80%;
     background-color: transparent;
     border: none;
     outline: 0;
     color: #e7e7e7;
-    font-size: 18px;
+    font-size: 16px;
 }
+
+
 
 .div-jogos {
     height: 100%;
     width: 100%;
     text-align: center;
+    margin-top: 27px;
 }
 
 .jogos {
     height: 200px;
     width: 200px;
-    margin: 1%;
-    background-color: #131313;
-    box-shadow: 0px 0px 30px black;
+    margin: 0.5%;
+    border-radius: 8px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.jogos:hover {
-    background: linear-gradient(100deg, rgba(0, 58, 183, 1) 0%, rgba(0, 102, 193, 1) 100%);
-    box-shadow: 0px 0px 50px #154bbb;
-    z-index: 1;
-}
 
 .imagem {
     position: relative;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: solid 1px #353535;
 }
+
 
 #titulo-pagina {
     display: flex;
@@ -234,10 +230,12 @@ main {
     color: #e7e7e7;
     text-decoration: none;
     font-size: 20px;
-    width: 105px;
-    height: 50px;
-    background-color: rgb(46, 46, 46);
-    box-shadow: 0px 3px 0px #154bbb;
+    width: 100px;
+    margin-left: 15px;
+    height: 40px;
+    background-color: #131313;
+    border-radius: 6px 6px 6px 6px;
+    border: solid 1px #353535;
 }
 
 #login {
@@ -260,17 +258,16 @@ main {
     position: absolute;
     color: #e7e7e7;
     font-weight: bold;
-    background-color: #131313;
     margin-top: 150px;
     width: 200px;
     height: 50px;
-    border-radius: 5px;
     z-index: -1;
 }
 
 .jogos:hover .titulojogo {
-    background: linear-gradient(100deg, rgba(0, 58, 183, 1) 0%, rgba(0, 102, 193, 1) 100%);
     z-index: 1;
+    background-color: #238636;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .nav-list.active {
@@ -328,18 +325,24 @@ main {
         height: auto;
         font-size: 25px;
     }
+    .nav-list li:hover{
+        background-color: transparent;
+        border-bottom: transparent;
+
+    }
     .mobile-menu {
         display: block;
     }
-    .nav-list li:hover {
-        box-shadow: 0px 0px 0px transparent inset;
+    #jogos {
+        border: 0px;
+    }
+    #jogos:hover{
+        background-color: transparent;
     }
     .titulojogo {
         width: 140px;
         height: 140px;
         margin-top: 0;
     }
-    #jogos {
-        box-shadow: 0px -3px 0px #154cbb00 inset;
-    }
+
 }

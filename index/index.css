@@ -1,36 +1,29 @@
-@font-face {
-    font-family: "custom-font";
-    src: url("KFOmCnqEu92Fr1Mu4mxK.woff2") format("woff2"),
-}
-
 * {
     margin: 0;
     padding: 0;
-    font-family: "custom-font", sans-serif;
     user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";;
 }
 
 a {
-    color: #e7e7e7;
+    color: #ccc;
     text-decoration: none;
+}
+
+#a{
+    color: #fff!important;
 }
 
 #logo {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
-    pointer-events: none;
     transition: 0s;
 }
 
 #logo:hover {
-    color: #154bbb;
+    color: #238636;
 }
 
 nav {
@@ -38,8 +31,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     background: #2a2a2a;
-    box-shadow: -4px 0 10px black;
     height: 55px;
+    border-bottom: 1px solid #353535;
 }
 
 .nav-list {
@@ -55,8 +48,8 @@ nav {
     margin-left: 5px;
     font-size: 10px;
     font-weight: 600;
-    color: #e7e7e7;
-    background-color: #154bbb;
+    color: #ccc;
+    background-color: #238636;
     border-radius: 4px;
     padding: 1px 5px;
     position: relative;
@@ -70,11 +63,13 @@ nav {
     align-items: center;
     font-size: 15px;
     font-weight: 600;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-list li:hover {
-    box-shadow: 0px -3px 0px rgba(16, 16, 16, 0.5) inset;
-    transition: 0.3s;
+    border-bottom: 2px solid #238636;
+    transition: 0.6s;
+    background-color: #353535;
 }
 
 .dark-mode {
@@ -98,17 +93,17 @@ nav {
 }
 
 #inicio {
-    box-shadow: 0px -3px 0px #154bbb inset;
+    border-bottom: 2px solid #238636;
 }
 
 #login {
-    color: #e7e7e7;
+    color: #ccc;
     font-size: 20px;
     cursor: pointer;
 }
 
 #mode {
-    color: #e7e7e7;
+    color: #ccc;
     font-size: 20px;
     cursor: pointer;
 }
@@ -173,11 +168,11 @@ iframe{
 #container {
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #2a2a2a;
-    box-shadow: 0px 0px 10px black;
     width: 90vw;
     height: 100%;
     box-sizing: border-box;
+    background-color: #2a2a2a;
+    border-radius: 10px 10px 8px 8px;
 }
 
 #menu-container {
@@ -187,58 +182,33 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#input-menu {
-    margin-right: 20px;
-    width: 80%;
-    height: 40px;
-    background-color: #2a2a2a;
-    box-shadow: 0px -3px 0px #131313 inset;
-    display: flex;
-    align-items: center;
-}
-
-#input-menu:hover {
-    box-shadow: 0px -5px 0px rgba(16, 16, 16, 0.9) inset;
-    transition: 0.2s;
-}
-
-#lupa {
-    margin-left: 5px;
-}
-
-#search {
-    margin-bottom: 4px;
-    width: 90%;
-    height: 80%;
-    background-color: transparent;
-    border: none;
-    outline: 0;
-    color: #e7e7e7;
-    font-size: 18px;
+    border-radius: 8px 8px 0 0;
 }
 
 #titulo-pagina {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 50%;
     color: #e7e7e7;
-    text-decoration: none;
     font-size: 20px;
-    width: 105px;
-    height: 50px;
-    background-color: rgb(46, 46, 46);
-    box-shadow: 0px 3px 0px #154bbb;
+    width: 53px;
+    height: 40px;
+    background-color: #131313;
+    border-radius: 6px 6px 6px 6px;
+    border: solid 1px #353535;
+    position: relative;
+    left: -46.5%;
 }
 
 #pagina-inicio {
     width: 100%;
-    height: 85.2%;
+    min-height: 100vh;
+    background-color: #353535;
+    border-radius: 0px 0px 8px 8px;
     display: flex;
     justify-content: center;
-}
+  }
+  
 
 .nav-list.active {
     transform: translateX(0);
@@ -251,9 +221,7 @@ iframe{
         width: 100%;
         position: fixed;
     }
-    #titulo-pagina {
-        margin-right: 10%;
-    }
+
     .nav-list {
         z-index: 1;
         position: fixed;
@@ -273,6 +241,11 @@ iframe{
     #login {
         font-size: 30px;
     }
+    #titulo-pagina {
+    margin-left: 50px;
+    width: 55px;
+    }
+
     .nav-list li {
         margin-top: 70px;
         margin-bottom: 50px;
@@ -281,13 +254,20 @@ iframe{
         height: auto;
         font-size: 25px;
     }
+    .nav-list li:hover{
+        background-color: transparent;
+        border-bottom: transparent;
+
+    }
     .mobile-menu {
         display: block;
     }
-    .nav-list li:hover {
-        box-shadow: 0px 0px 0px transparent inset;
-    }
     #inicio {
-        box-shadow: 0px -3px 0px #154cbb00 inset;
+        border: 0px;
     }
+    #inicio:hover{
+        background-color: transparent;
+    }
+
+
 }
