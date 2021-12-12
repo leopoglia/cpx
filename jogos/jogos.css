@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+#jogos {
+    border-bottom: 2px solid #238636;
+}
+
+#b{
+    color: #fff!important;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0s;
+}
+
+#logo:hover {
+    color: #238636;
+}
+
+#version {
+    margin-left: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #e7e7e7;
+    background-color: #238636;
+    border-radius: 4px;
+    padding: 1px 5px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2a2a2a;
+    height: 55px;
+    border-bottom: 1px solid #353535;
+}
+.nav-list {
+    margin-left: 40%;
+    height: 54px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    height: 100%;
+    display: flex;
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-list li:hover {
+    border-bottom: 2px solid #238636;
+    transition: 0.6s;
+    background-color: #353535;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+body {
+    background-color: #131313;
+}
+
+.dark-mode {
+    background-color: rgb(255, 255, 255) !important;
+    color: #154bbb !important;
+}
+
+.dark-mode2{
+    background-color: #154bbb !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.dark-mode3 {
+    background-color: rgb(255, 255, 255) !important;
+    color: #154bbb !important;
+    box-shadow: 0px -3px 0px rgba(16, 16, 16, 30%) inset !important;
+}
+
+.dark-mode3:hover {
+    box-shadow: 0px -4px 0px rgba(16, 16, 16, 30%) inset !important;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90vw;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    border-radius: 10px 10px 8px 8px;
+}
+
+#menu-container {
+    width: 100%;
+    height: 70px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 8px 0 0;
+}
+
+#input-menu {
+    margin-right: 20px;
+    width: 80%;
+    height: 40px;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    border-radius: 6px 6px 6px 6px;
+    border: solid 1px #353535;
+}
+
+#lupa {
+    margin-left: 5px;
+}
+
+
+#lupa {
+    margin-left: 5px; 
+}
+
+#search {
+    margin-left: 5px;
+    width: 90%;
+    height: 80%;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: #e7e7e7;
+    font-size: 16px;
+}
+
+
+
+.div-jogos {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 27px;
+}
+
+.jogos {
+    height: 200px;
+    width: 200px;
+    margin: 0.5%;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.imagem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: solid 1px #353535;
+}
+
+
+#titulo-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50%;
+    color: #e7e7e7;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100px;
+    margin-left: 15px;
+    height: 40px;
+    background-color: #131313;
+    border-radius: 6px 6px 6px 6px;
+    border: solid 1px #353535;
+}
+
+#login {
+    color: #e7e7e7;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#mode {
+    color: #e7e7e7;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.titulojogo {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #e7e7e7;
+    font-weight: bold;
+    margin-top: 150px;
+    width: 200px;
+    height: 50px;
+    z-index: -1;
+}
+
+.jogos:hover .titulojogo {
+    z-index: 1;
+    background-color: #238636;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@media (max-width: 1100px) {
+    body {
+        overflow-x: hidden;
+    }
+    #titulo-pagina {
+        margin-right: 10%;
+    }
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+    .nav-list {
+        z-index: 1;
+        position: fixed;
+        top: 55px;
+        right: 0;
+        width: 100vw;
+        height: 100%;
+        background: #131313;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+    }
+    #container {
+        margin-top: 105px;
+    }
+    .fundo-mode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #mode {
+        font-size: 30px;
+    }
+    #login {
+        font-size: 30px;
+    }
+    .jogos {
+        width: 140px;
+        height: 140px;
+    }
+    .nav-list li {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-left: 0;
+        opacity: 0;
+        height: auto;
+        font-size: 25px;
+    }
+    .nav-list li:hover{
+        background-color: transparent;
+        border-bottom: transparent;
+
+    }
+    .mobile-menu {
+        display: block;
+    }
+    #jogos {
+        border: 0px;
+    }
+    #jogos:hover{
+        background-color: transparent;
+    }
+    .titulojogo {
+        width: 140px;
+        height: 140px;
+        margin-top: 0;
+    }
+
+}
