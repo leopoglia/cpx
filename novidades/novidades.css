@@ -15,6 +15,19 @@ a {
   color: #fff!important;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5e5e5e;
+  border-radius: 10px;
+}
+
 
 #logo {
   display: flex;
@@ -309,17 +322,20 @@ main{
   transform: translateX(0);
 }
 
-.nome{
-  animation: nome 5s infinite;
-  cursor: pointer;
+#foto-perfil{
+  width: 40px;
+  height: 40px;
 }
 
-
-@keyframes nome {
-  0%   {color: red;}
-  25%  {color: yellow;}
-  50%  {color: blue;}
-  100% {color: green;}
+#fundo-foto-perfil{
+  margin-left: 75%;
+  width: 45px;
+  height: 45px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1100px) {
